@@ -1,0 +1,24 @@
+# Site settings
+title: Le Wagon - Lectures
+email: seb@saunier.me
+baseurl: ""
+url: "http://karr.lewagon.org"
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+
+reveal_path: _vendors/revealjs/
+# default/cube/page/concave/zoom/linear/fade/none
+
+exclude:
+  - /vendor
+
+assets:
+  js_compressor: uglifier
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/files
+    - _vendors

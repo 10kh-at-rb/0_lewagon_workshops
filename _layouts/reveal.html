@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    {% stylesheet reveal %}
+
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '{% asset_path reveal_print.css %}';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <!-- <div class="print">
+      <a href="{{ page.url }}?print-pdf">PDF-friendly</a>
+    </div> -->
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-separator="^---$" data-vertical="^--$" data-notes="^Note:">
+          <script type="text/template">
+{% for workshop in site.data.workshops %}
+    {% capture path %}/workshops/{{ workshop.file }}/{% endcapture %}
+    {% if path == page.url %}
+# {{ workshop.name }}
+
+---
+
+{% endif %}
+{% endfor %}
+
+{{ page.raw_content_with_assets_rendered }}
+          </script>
+        </section>
+      </div>
+    </div>
+
+    {% javascript reveal %}
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        width: 1280,
+        height: 800,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+        {% if site.reveal_options %}
+          {{ site.reveal_options | append:',' }}
+        {% endif %}
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'linear',  // default/cube/page/concave/zoom/linear/fade/none
+        dependencies: [
+          { src: '{% asset_path highlightjs/highlight.min.js %}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

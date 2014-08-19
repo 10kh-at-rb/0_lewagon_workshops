@@ -1,0 +1,7 @@
+/*
+ *= require revealjs/css/print/pdf.css
+ */
+
+.print, .slide-number {
+  display: none !important;
+}

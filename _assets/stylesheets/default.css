@@ -1,0 +1,11 @@
+/*
+ *= require solo.css
+ */
+
+ body {
+  background-color: #FFFAEF;
+ }
+
+ ol li {
+  line-height: 60%;
+ }

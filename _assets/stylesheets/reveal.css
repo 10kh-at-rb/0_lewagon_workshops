@@ -1,0 +1,53 @@
+/*
+ *= require revealjs/css/reveal.css
+ *= require revealjs/css/theme/solarized.css
+ *= require highlightjs/solarized_light.min.css
+ */
+
+body {
+  background-color: #FFFAEF;
+}
+
+.reveal pre {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 70%;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.print {
+  position: fixed;
+  bottom: 14px;
+  right: 120px;
+  z-index: 300;
+}
+
+.print a, .print a:hover {
+  color: #268bd2;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.print a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+:-webkit-full-screen .print {
+  display: none;
+}
+:-moz-full-screen .print {
+  display: none;
+}
+:fullscreen .print {
+  display: none;
+}
