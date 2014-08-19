@@ -1,3 +1,0 @@
-[submodule "vendors/highlightjs"]
-	path = vendors/highlightjs
-	url = git@github.com:isagalaev/highlight.js.git
