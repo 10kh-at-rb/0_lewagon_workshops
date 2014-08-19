@@ -1,3 +1,3 @@
-[submodule "_vendors/reveal.js"]
-	path = _vendors/reveal.js
+[submodule "_vendors/revealjs"]
+	path = _vendors/revealjs
 	url = git@github.com:hakimel/reveal.js.git

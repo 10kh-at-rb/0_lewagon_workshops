@@ -1,8 +1,8 @@
 # Site settings
-title: Le Wagon - Lectures
+title: Le Wagon - Workshops
 email: seb@saunier.me
 baseurl: ""
-url: "http://karr.lewagon.org"
+url: "http://workshops.lewagon.org"
 
 # Build settings
 markdown: redcarpet
