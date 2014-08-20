@@ -1,2 +1,6 @@
-- name: Test
-  file: test
+- name: Web Overview
+  file: intro
+- name: Front-End & Design
+  file: frontend-design
+- name: Bootstrap
+  file: bootstrap
