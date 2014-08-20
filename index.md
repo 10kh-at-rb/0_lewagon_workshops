@@ -6,6 +6,6 @@ layout: default
 
 {% for workshop in site.data.workshops %}
 
-- [{{ workshop.name }}]({{ site.baseurl }}/workshops/{{ workshop.file }}/)
+- [{{ workshop.name }}]({{ site.baseurl }}/workshops/{{ workshop.file }}/index.html)
 
 {% endfor %}

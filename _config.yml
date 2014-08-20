@@ -12,7 +12,7 @@ reveal_path: _vendors/revealjs/
 # default/cube/page/concave/zoom/linear/fade/none
 
 exclude:
-  - /vendor
+  - vendor
 
 assets:
   js_compressor: uglifier
