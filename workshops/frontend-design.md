@@ -496,7 +496,7 @@ div{
 
 ## [PRACTICE] Add div
 
-Insert div to structure to your HTML code like this
+Structure your HTML code with `<div>`, to group content that fits together, like this
 ```html
 <body>
   <div>
@@ -513,7 +513,7 @@ Insert div to structure to your HTML code like this
 </body>
 ```
 --
-## [PRACTICE] Make them visible
+## [PRACTICE] Make the div visible
 Make these `div` visible adding some CSS rules on them
 ```css
 div{
