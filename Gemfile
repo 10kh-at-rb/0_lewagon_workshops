@@ -8,6 +8,7 @@ gem 'uglifier'
 
 gem 'sinatra'
 gem 'puma'
+gem 'rake'
 
 gem 'foreman', group: :development
 gem 'pry-byebug', group: :development
