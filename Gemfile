@@ -6,8 +6,7 @@ gem 'jekyll'
 gem 'jekyll-assets'
 gem 'uglifier'
 
-gem 'rack-jekyll'
-gem 'ffi', '1.9.0'
+gem 'sinatra'
 gem 'puma'
 
 gem 'foreman', group: :development
