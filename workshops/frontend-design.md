@@ -574,7 +574,7 @@ Use a `class` for each restaurant's adress
 <p class="address">12, rue des petites ecuries 75010 Paris</p>
 ```
 --
-## [PRACTICE] Add the CSS on these named elements
+## [PRACTICE] Add CSS on these elements
 
 ```css
 #fooding-header{
@@ -601,22 +601,20 @@ Use a `class` for each restaurant's adress
 ## Fontawesome
 
 1. A font for icons
-2. Link the library in your HTML
+2. Link the library in your HTML `<head>
 ```html
-<head>
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-</head>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 ```
 3. Then choose icons from [Fontawesome set](http://fortawesome.github.io/Font-Awesome/icons/)
 
 --
 ## [PRACTICE]
-On your page, try this on the main title:
+Here are some suggestions for the main title
 
 ```html
 <h1><i class="fa fa-cutlery"></i> LE FOODING</h1>
 ```
-or, on the addresses:
+and for the addresses:
 ```html
 <p class="adress"><i class="fa fa-map-marker"></i> 12, rue des petites ecuries 75010 Paris</p>
 ```
