@@ -8,9 +8,8 @@ layout: reveal
 --
 
 ## Up & Running
-- Install [Google Chrome](https://www.google.com/intl/fr/chrome/browser/)
-- Install [Sublime Text 2](http://www.sublimetext.com/2)
-
+- Install <a href="https://www.google.com/intl/fr/chrome/browser/" target="_blank">Google Chrome</a>
+- Install <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>
 --
 
 ## Working with Sublime
@@ -20,13 +19,14 @@ layout: reveal
 
 ![]({% asset_path sublime.png %})
 
-
 --
 
 ## Your first HTML page
-- Add a new HTML file named `playground.html`
-- Add a new CSS file named `style.css`
-- now you're ready to code!
+- Add a new HTML file named **`playground.html`**
+- Add a new CSS file named **`style.css`**
+- Open your HTML file in the browser
+- Now **don't move!** you're ready to code!
+
 ---
 
 ## What's in a web page?
@@ -258,6 +258,7 @@ Result: <a href="http://www.lewagon.org" target="_blank">Le Wagon</a>
 ```
 
 --
+### PRACTICE (1)
 
 **`<head>`**
 
@@ -269,28 +270,25 @@ Result: <a href="http://www.lewagon.org" target="_blank">Le Wagon</a>
 **`<body>`**
 
 ```html
-<h1>MY PLAYGROUND APP</h1>
+<h1>My playground app</h1>
 <p>A toy app to practice my HTML..</p>
 
 <h2>Quick</h2>
 <p>A quick app, <strong>very quick</strong> app</p>
-<img src="your-image.png" alt="picture description">
+<img src="your-image.png" alt="picture description" width="100">
 
 <h2>Simple</h2>
 <p>A simple app, <strong>very simple</strong> app</p>
-<img src="your-image.png" alt="picture description">
+<img src="your-image.png" alt="picture description" width="100">
 
 <p>This is a playground landing ©Le Wagon</p>
 ```
 --
+### PRACTICE (2)
 
-## Icons & images [TIPS]
+To illustrate your app features
 
-For `src` attributes:
-
-1. http://placehold.it/200x200
-1. http://lorempixel.com/200/200/sports/
-1. Or download cool [Noun Project icons](http://nounproject.com) **locally**
+- Choose PNG icons from <a href="http://nounproject.com" target="_blank">Noun Project</a>
 
 ---
 ## CSS
@@ -393,12 +391,7 @@ body {
 ![]({% asset_path front/text-align.png %})
 
 --
-
-## Sizes and radius
-![]({% asset_path front/size-radius.png %})
-
---
-
+### PRACTICE (1)
 **`<head>`**
 ```html
 <link href='style.css' rel='stylesheet'>
@@ -419,35 +412,23 @@ p{
   font-size: 30px;
   line-height: 20px;
 }
-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-}
 ```
 --
 
-## [Tips] Color tools
+### PRACTICE (2)
 
-- Color schemes on [kuler](https://kuler.adobe.com/)
-- Color-picker on [colorzilla](https://addons.mozilla.org/fr/firefox/addon/colorzilla/) to pick nice colors on-the-fly.
+- Change the color of the texts in the `<body>` to black
+- Change the size of the text paragraphs to 16px
+- Change the `<h1>` color. Use <a href="https://addons.mozilla.org/fr/firefox/addon/colorzilla/" target="_blank">Colorzilla</a> to pick from another website
 
---
-
-## [Tips] Fonts tools
-
-- [google fonts](https://www.google.com/fonts)
-- [fontface ninja](http://fontface.ninja/)
 
 --
-## [Tips] Poor web-designer guide
 
-1. Open-Sans google font for basic texts
-1. Elegant no serif font for `h1`, `h2`
-like [PillsGothic](http://www.myfonts.com/fonts/betatype/pill-gothic/)
-1. Serif fonts (Museo-Slab, Arvo) for secondary titles (`h3`, `h4`,..)
-
-**3 fonts max !**
+### PRACTICE (2)
+- Link `Open-Sans` and `Lobster` <a href="https://www.google.com/fonts" target="_blank">Google fonts</a> in your `<head>`
+- Use Lobster `font-family` for your `<h1>`
+- Use Open-Sans `font-family` for all the other texts of your `<body>`
+- You can identify any web font with <a href="http://fontface.ninja/" target="_blank">Fontface Ninja</a>
 
 ---
 ## Div and box model
@@ -486,17 +467,18 @@ div{
 ```
 --
 
-Structure your HTML code with `<div>`
+### PRACTICE (1)
+Structure your HTML with `<div>`
 ```html
 <body>
   <div>
-    <h1>MY PLAYGROUND APP</h1>
+    <h1>My playground app</h1>
     <p>A toy app to practice my HTML..</p>
   </div>
 
   <div>
     <h2>Quick</h2>
-    <p>A very quick app</p>
+    <p>A quick app, <strong>very quick</strong> app</p>
     <img src="your-image.png" alt="picture description">
   </div>
 
@@ -544,17 +526,18 @@ Structure your HTML code with `<div>`
 
 --
 
-**Name you `<div>`**
+### PRACTICE (1)
+Name you `<div>`
 
 ```html
 <div id="my-header">
-  <h1>MY PLAYGROUND APP</h1>
+  <h1>My playground app</h1>
   <p>A toy app to practice my HTML..</p>
 </div>
 
 <div class="feature">
   <h2>Quick</h2>
-  <p>A very quick app</p>
+  <p>A quick app, <strong>very quick</strong> app</p>
   <img src="your-image.png" alt="picture description">
 </div>
 
@@ -563,12 +546,13 @@ Structure your HTML code with `<div>`
 </div>
 ```
 --
-**Now style them independently**
+### PRACTICE (2)
+Now style them
 
 ```css
 #my-header{
   text-align: center;
-  background-image: url("http://lorempixel.com/1300/600/fashion/");
+  background-image: url("http://lorempixel.com/1300/600/nightlife/");
   background-size: cover;
   padding: 150px;
   color: white;
@@ -583,29 +567,35 @@ Structure your HTML code with `<div>`
 .feature img{
   padding: 20px;
   border: 2px solid black;
-  border-radius:
+  border-radius: 50%;
 }
 
 #my-footer{
-  padding: 30px 0;
+  padding: 30px;
   background: rgb(30, 30, 30);
-  color: lightgrey;  color: lightgrey;
+  color: lightgrey;
 }
 ```
 ---
 
 ## Fontawesome
 
+- <a href="http://fontawesome.com" target="_blank">A font of icons!</a>
+- A font == no need to resize icons or change their color, it can be made with CSS
+- VERY usefull for utilitary icons (social networks, upload, settings, mail, etc..)
+
+--
+### PRACTICE (1)
+
 **`<head>`**
 ```html
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 ```
 
-- A font of icons
-- Choose icons from [Fontawesome list](http://fortawesome.github.io/Font-Awesome/icons/)
-
 --
-**in the footer `<div>`**
+### PRACTICE (2)
+
+**in your footer `<div>`**
 ```html
 <ul>
   <li><a href="#"><i class="fa fa-youtube"></i></a></li>
@@ -615,7 +605,7 @@ Structure your HTML code with `<div>`
 </ul>
 ```
 
-**Style these "font"-icons**
+**Style these icons with CSS**
 ```css
 #my-footer a {
   color: lightgrey;
@@ -623,6 +613,352 @@ Structure your HTML code with `<div>`
 #my-footer a:hover {
   color: white;
 }
+```
+
+---
+
+![]({% asset_path front/bootstrap.png %})
+
+--
+
+## CSS classes
+
+- Elementary CSS (typos, images, buttons, forms)
+- Advanced components (navbar, panels)
+- Javascript animation (dropdown, modal,..)
+
+--
+
+## Grid System
+
+![]({% asset_path front/bootstrap-grid-intro.png %})
+
+--
+
+## Everything starts with a nice boilerplate!
+
+https://github.com/lewagon/bootstrap-boilerplate
+
+--
+## PRACTICE (1)
+
+- Let's start from scratch :)
+- Create a new **`index.html`** file
+- Containing exactly <a href="https://github.com/lewagon/bootstrap-boilerplate
+" target="_blank">our boilerplate</a>
+- Add the link to **your** stylesheet **after** the link to Bootstrap stylesheet
+
+```html
+<link href='style.css' rel='stylesheet'>
+```
+- Copy/paste your `<title>` and google fonts links in your new page
+- Copy/paste your `<body>` in your new page
+
+---
+
+## Elementary CSS
+
+http://getbootstrap.com/css/
+
+--
+
+### Typos (alignment)
+
+![]({% asset_path front/bootstrap-texts.png %})
+
+--
+
+### Typos (list-inline)
+
+```html
+<ul class="list-inline">
+  <!--Your list-->
+</ul>
+```
+
+![]({% asset_path front/list-inline-footer.png %})
+
+--
+
+### Buttons
+
+![]({% asset_path front/bootstrap-buttons.png %})
+
+```html
+<a class="btn">Default</a>
+<a class="btn btn-primary">Primary</a>
+<a class="btn btn-success">Success</a>
+<a class="btn btn-info">Info</a>
+```
+
+--
+
+### Images
+
+![]({% asset_path front/bootstrap-images.png %})
+
+--
+
+### PRACTICE (1)
+
+Add these Bootstrap classes
+
+- `text-center` on your paragraphs
+- `list-inline` on your footer list (`<ul>`)
+
+---
+
+## Advanced components
+
+http://getbootstrap.com/components/
+
+--
+
+### Navbar
+
+![]({% asset_path front/bootstrap-navbar.png %})
+
+--
+
+ ### PRACTICE (1)
+
+- Copy <a href="http://getbootstrap.com/components/#navbar-default" target="_blank">Bootstrap navbar</a> at the beginning of your body
+- Add the `navbar-fixed-top` class to your `<nav>` to fix it at the top
+- Get rid of the first left navigation `<ul>` and of the `<form>`
+- Change the names of the remaining links
+
+---
+
+## Bootstrap grid
+
+![]({% asset_path front/bootstrap-grid-intro.png %})
+
+
+--
+
+## Definition
+
+Bootstrap includes a **responsive, mobile first** fluid **grid** system that appropriately scales up to **12 columns** as the **device** size increases.
+
+--
+
+## Responsive
+
+![]({% asset_path front/bootstrap-responsive.png %})
+
+
+--
+
+## Mobile-first
+
+![]({% asset_path front/bootstrap-mobile-first.png %})
+
+--
+
+## How it works?
+
+--
+
+## Container first
+
+```html
+<div class="container">
+
+  <!--Define a container-->
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-container.png %})
+
+--
+
+## Then insert rows
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-1.png %})
+
+--
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+  <div class="row">
+    <!-- Second row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-2.png %})
+
+--
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+  <div class="row">
+    <!-- Second row -->
+  </div>
+
+  <div class="row">
+    <!-- Third row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-3.png %})
+
+--
+
+## What's in the row ?
+
+```html
+<div class="col-xs-6">
+</div>
+```
+
+- **col**: because it fits a number of columns
+- **xs**: screen width
+- **6**: number of columns taken by the block (**max 12**)
+
+--
+
+## Media
+
+- **xs**: Extra small devices (Phones < 768px)
+- **sm**: Small devices (Tablets > 768px)
+- **md**: Medium devices (> 992px)
+- **lg**: Large devices (Desktops > 1200px)
+
+--
+## Example (2 columns)
+
+![]({% asset_path front/bootstrap-2-on-all.png %})
+
+--
+
+## Code
+
+```html
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+  </div>
+</div>
+```
+
+![]({% asset_path front/bootstrap-2-divs.png %})
+
+--
+
+## Mobile first
+
+- if you just give the `.col-xs` classes
+- it will apply on all larger screens
+
+--
+## Now what happens ?
+```html
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+  </div>
+</div>
+```
+
+--
+## Just return on new line
+
+![]({% asset_path front/bootstrap-3-divs.png %})
+
+--
+
+## Responsive example
+We want 4 blocks for tablets or larger screens
+
+![]({% asset_path front/bootstrap-4-on-tablet.png %})
+
+--
+We want 2 rows for mobiles with 2 blocks on each row
+
+![]({% asset_path front/bootstrap-4-on-mobile.png %})
+--
+
+## How will you do ?
+
+--
+
+## Code
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+  </div>
+</div>
+```
+
+Yeah baby !
+
+--
+### PRACTICES (1)
+
+** initial grid **
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+  </div>
+</div>
+```
+** A feature `<div>` in each `.col`**
+
+```html
+<div class="col-xs-6 col-sm-3">
+  <div class="feature">
+    ...
+  </div>
+</div>
 ```
 
 --
