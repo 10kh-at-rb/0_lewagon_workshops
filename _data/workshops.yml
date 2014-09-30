@@ -4,3 +4,5 @@
   file: frontend-design
 - name: Bootstrap
   file: bootstrap
+- name: Your landing page
+  file: landing
