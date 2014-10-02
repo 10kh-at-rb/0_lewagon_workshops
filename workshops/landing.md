@@ -419,7 +419,7 @@ p{
 
 - Change the color of the texts in the `<body>` to black
 - Change the size of the text paragraphs to 16px
-- Change the `<h1>` color. Use <a href="https://addons.mozilla.org/fr/firefox/addon/colorzilla/" target="_blank">Colorzilla</a> to pick from another website
+- Change the `<h1>` color. Use <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp" target="_blank">Colorzilla</a> to pick from another website
 
 
 --
@@ -580,7 +580,7 @@ Now style them
 
 ## Fontawesome
 
-- <a href="http://fontawesome.com" target="_blank">A font of icons!</a>
+- <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">A font of icons!</a>
 - A font == no need to resize icons or change their color, it can be made with CSS
 - VERY usefull for utilitary icons (social networks, upload, settings, mail, etc..)
 
@@ -589,7 +589,7 @@ Now style them
 
 **`<head>`**
 ```html
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 ```
 
 --
