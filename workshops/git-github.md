@@ -100,10 +100,6 @@ $ git config -l
 ## Starting
 
 ```bash
-# Existing repository (on GitHub for instance)
-$ git clone <github_ssh_clone_url_bottom_right>
-
-# or from nothing
 $ mkdir new_project
 $ cd new_project
 $ git init
