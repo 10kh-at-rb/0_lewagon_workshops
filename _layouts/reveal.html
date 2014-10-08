@@ -37,6 +37,11 @@
 {% for workshop in site.data.workshops %}
     {% capture path %}/workshops/{{ workshop.file }}/{% endcapture %}
     {% if path == page.url %}
+
+<img src="{% asset_path logo.png %}" width="30%"/>
+
+---
+
 # {{ workshop.name }}
 
 ---
