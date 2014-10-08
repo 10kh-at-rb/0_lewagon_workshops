@@ -6,3 +6,5 @@
   file: bootstrap
 - name: Your landing page
   file: landing
+- name: Git & GitHub
+  file: git-github
