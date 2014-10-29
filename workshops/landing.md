@@ -28,7 +28,6 @@ layout: reveal
 - Description
 - CTA
 - Analytics!
-
 ---
 
 ## Workshop outline
