@@ -1,6 +1,36 @@
 ---
 layout: reveal
 ---
+## Landing pages
+1. Why
+1. What
+1. When
+--
+
+## Why
+- Tell customers about your offer
+- Test various aspects
+- Collect interested contacts
+--
+
+## What
+- First sentences about your offer
+- It's about your users, not about you
+- It's about their problems, not about your solution
+--
+
+## When
+- Now
+- It will change anyway
+--
+
+## What
+- Description
+- CTA
+- Analytics!
+
+---
+
 ## Workshop outline
 1. Theoretical intro
 1. Live-code demo (**we code, you don't**)
