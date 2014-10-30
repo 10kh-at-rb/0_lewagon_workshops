@@ -7,14 +7,39 @@ layout: reveal
 1. When
 --
 
+![]({% asset_path landing/openingsoon.jpg %})
+
+--
+
 ## Why
 - Tell customers about your offer
 - Test various aspects
 - Collect interested contacts
 --
 
-## What
-- First sentences about your offer
+## What - Content
+
+### CLEAR & CONCISE
+
+* 1 striking headline
+* 1 explicite subhead
+* 1 simple call-to-action (CTA)
+* 1 image rather than a long text to set the context
+message & keywords consistent & coherent        
+--
+
+## What - Style
+
+### FOCUSED & USER-FRIENDLY !
+
+* focus attention on CTA with color contrast, encapsulation frame, space,...
+* 1 single button to click on : the one with your CTA on it
+* fully-responsive layout
+* fully-scrollable content & thumb-friendly buttons/links       
+--
+
+## What - Remember
+
 - It's about your users, not about you
 - It's about their problems, not about your solution
 --
@@ -22,12 +47,7 @@ layout: reveal
 ## When
 - Now
 - It will change anyway
---
 
-## What
-- Description
-- CTA
-- Analytics!
 ---
 
 ## Workshop outline
@@ -605,396 +625,13 @@ Now style them
   color: lightgrey;
 }
 ```
----
-
-## Fontawesome
-
-- <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">A font of icons!</a>
-- A font == no need to resize icons or change their color, it can be made with CSS
-- VERY usefull for utilitary icons (social networks, upload, settings, mail, etc..)
-
---
-### PRACTICE (1)
-
-**`<head>`**
-```html
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-```
-
---
-### PRACTICE (2)
-
-**in your footer `<div>`**
-```html
-<ul>
-  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-</ul>
-```
-
-**Style these icons with CSS**
-```css
-#my-footer a {
-  color: lightgrey;
-}
-#my-footer a:hover {
-  color: white;
-}
-```
 
 ---
 
-![]({% asset_path front/bootstrap.png %})
+## Forms
+### User input
 
 --
 
-## CSS classes
 
-- Elementary CSS (typos, images, buttons, forms)
-- Advanced components (navbar, panels)
-- Javascript animation (dropdown, modal,..)
 
---
-
-## Grid System
-
-![]({% asset_path front/bootstrap-grid-intro.png %})
-
---
-
-## Everything starts with a nice boilerplate!
-
-https://github.com/lewagon/bootstrap-boilerplate
-
---
-## PRACTICE (1)
-
-- Let's start from scratch :)
-- Create a new **`index.html`** file
-- Containing exactly <a href="https://github.com/lewagon/bootstrap-boilerplate
-" target="_blank">our boilerplate</a>
-- Add the link to **your** stylesheet **after** the link to Bootstrap stylesheet
-
-```html
-<link href='style.css' rel='stylesheet'>
-```
-- Copy/paste your `<title>` and google fonts links in your new page
-- Copy/paste your `<body>` in your new page
-
----
-
-## Elementary CSS
-
-http://getbootstrap.com/css/
-
---
-
-### Typos (alignment)
-
-![]({% asset_path front/bootstrap-texts.png %})
-
---
-
-### Typos (list-inline)
-
-```html
-<ul class="list-inline">
-  <!--Your list-->
-</ul>
-```
-
-![]({% asset_path front/list-inline-footer.png %})
-
---
-
-### Buttons
-
-![]({% asset_path front/bootstrap-buttons.png %})
-
-```html
-<a class="btn">Default</a>
-<a class="btn btn-primary">Primary</a>
-<a class="btn btn-success">Success</a>
-<a class="btn btn-info">Info</a>
-```
-
---
-
-### Images
-
-![]({% asset_path front/bootstrap-images.png %})
-
---
-
-### PRACTICE (1)
-
-Add these Bootstrap classes
-
-- `text-center` on your paragraphs
-- `list-inline` on your footer list (`<ul>`)
-
----
-
-## Advanced components
-
-http://getbootstrap.com/components/
-
---
-
-### Navbar
-
-![]({% asset_path front/bootstrap-navbar.png %})
-
---
-
- ### PRACTICE (1)
-
-- Copy <a href="http://getbootstrap.com/components/#navbar-default" target="_blank">Bootstrap navbar</a> at the beginning of your body
-- Add the `navbar-fixed-top` class to your `<nav>` to fix it at the top
-- Get rid of the first left navigation `<ul>` and of the `<form>`
-- Change the names of the remaining links
-
----
-
-## Bootstrap grid
-
-![]({% asset_path front/bootstrap-grid-intro.png %})
-
-
---
-
-## Definition
-
-Bootstrap includes a **responsive, mobile first** fluid **grid** system that appropriately scales up to **12 columns** as the **device** size increases.
-
---
-
-## Responsive
-
-![]({% asset_path front/bootstrap-responsive.png %})
-
-
---
-
-## Mobile-first
-
-![]({% asset_path front/bootstrap-mobile-first.png %})
-
---
-
-## How it works?
-
---
-
-## Container first
-
-```html
-<div class="container">
-
-  <!--Define a container-->
-
-</div>
-```
-
-![]({% asset_path front/bootstrap-container.png %})
-
---
-
-## Then insert rows
-
-```html
-<div class="container">
-
-  <div class="row">
-    <!-- First row -->
-  </div>
-
-</div>
-```
-
-![]({% asset_path front/bootstrap-row-1.png %})
-
---
-
-```html
-<div class="container">
-
-  <div class="row">
-    <!-- First row -->
-  </div>
-
-  <div class="row">
-    <!-- Second row -->
-  </div>
-
-</div>
-```
-
-![]({% asset_path front/bootstrap-row-2.png %})
-
---
-
-```html
-<div class="container">
-
-  <div class="row">
-    <!-- First row -->
-  </div>
-
-  <div class="row">
-    <!-- Second row -->
-  </div>
-
-  <div class="row">
-    <!-- Third row -->
-  </div>
-
-</div>
-```
-
-![]({% asset_path front/bootstrap-row-3.png %})
-
---
-
-## What's in the row ?
-
-```html
-<div class="col-xs-6">
-</div>
-```
-
-- **col**: because it fits a number of columns
-- **xs**: screen width
-- **6**: number of columns taken by the block (**max 12**)
-
---
-
-## Media
-
-- **xs**: Extra small devices (Phones < 768px)
-- **sm**: Small devices (Tablets > 768px)
-- **md**: Medium devices (> 992px)
-- **lg**: Large devices (Desktops > 1200px)
-
---
-## Example (2 columns)
-
-![]({% asset_path front/bootstrap-2-on-all.png %})
-
---
-
-## Code
-
-```html
-<div class="container">
-  <div class="row">
-
-    <div class="col-xs-6">
-    </div>
-
-    <div class="col-xs-6">
-    </div>
-
-  </div>
-</div>
-```
-
-![]({% asset_path front/bootstrap-2-divs.png %})
-
---
-
-## Mobile first
-
-- if you just give the `.col-xs` classes
-- it will apply on all larger screens
-
---
-## Now what happens ?
-```html
-<div class="container">
-  <div class="row">
-
-    <div class="col-xs-6">
-    </div>
-
-    <div class="col-xs-6">
-    </div>
-
-    <div class="col-xs-6">
-    </div>
-
-  </div>
-</div>
-```
-
---
-## Just return on new line
-
-![]({% asset_path front/bootstrap-3-divs.png %})
-
---
-
-## Responsive example
-We want 4 blocks for tablets or larger screens
-
-![]({% asset_path front/bootstrap-4-on-tablet.png %})
-
---
-We want 2 rows for mobiles with 2 blocks on each row
-
-![]({% asset_path front/bootstrap-4-on-mobile.png %})
---
-
-## How will you do ?
-
---
-
-## Code
-
-```html
-<div class="container">
-  <div class="row">
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-  </div>
-</div>
-```
-
-Yeah baby !
-
---
-### PRACTICES (1)
-
-** initial grid **
-```html
-<div class="container">
-  <div class="row">
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-    <div class="col-xs-6 col-sm-3"></div>
-  </div>
-</div>
-```
-** A feature `<div>` in each `.col`**
-
-```html
-<div class="col-xs-6 col-sm-3">
-  <div class="feature">
-    ...
-  </div>
-</div>
-```
-
---
-## Want to go further?
-
-- Apply to our [bootcamp program](http://lewagon.org/program)
-
-- Follow us on [Twitter](https://twitter.com/lewagonparis) or [Facebook](https://www.facebook.com/lewagonformation)
-
-- Seeya !
