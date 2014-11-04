@@ -630,8 +630,74 @@ Now style them
 
 ## Forms
 ### User input
+--
+## The Form Tag
+
+```html
+<form>
+.
+input elements
+.
+</form>
+```
+
+--
+## Inputs - Text
+```html
+<input type="text" name="firstname">
+```
+--
+
+## Inputs - Radio
+```html
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+```
+--
+
+## Inputs - Checkboxes
+```html
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car ```
+--
+
+## Inputs - Submit button
+
+```html
+<input type="submit" value="Submit">
+```
 
 --
 
+## Full form
+```html
+<form name="input" action="/subscribe" method="post">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
 
+```
 
+--
+
+## Form - server
+### We need something server side to answer to this action
+
+--
+## Mailchimp
+![]({% asset_path landing/mailchimp.jpg %})
+
+--
+
+![]({% asset_path landing/mailchimp-landing.png %})
+
+---
+
+## Bootstrap
+![]({% asset_path front/bootstrap.png %})
+
+--
+
+## Themes
+<a href="https://wrapbootstrap.com/" target="_blank">https://wrapbootstrap.com/</a>
+![]({% asset_path landing/wrapboostrap.png %})
