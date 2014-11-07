@@ -683,7 +683,7 @@ Username: <input type="text" name="user">
 ## Form - server
 ### We need something server side to answer to this action
 
---
+---
 ## Mailchimp
 ![]({% asset_path landing/mailchimp.jpg %})
 
@@ -691,13 +691,421 @@ Username: <input type="text" name="user">
 
 ![]({% asset_path landing/mailchimp-landing.png %})
 
+--
+
+![]({% asset_path landing/mailchimp-forms.png %})
+
+--
+
+### A form
+
+```html
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//8thcolor.us4.list-manage.com/subscribe/post?u=506ea88e9f457f1a4960a3310&amp;id=868a950c07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  ...
+  </form>
+</div>
+```
+
+--
+### Minimal fields
+
+```html
+    <h2>Subscribe to our mailing list</h2>
+    <div class="mc-field-group">
+      <label for="mce-EMAIL">Email Address </label>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+```
+
+--
+### Error messages
+
+```html
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    
+```
+
+--
+### Bot signup protection
+
+```html
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;">
+      <input type="text" name="b_506ea88e9f457f1a4960a3310_868a950c07" tabindex="-1" value="">
+    </div>
+```
+
+--
+### Action
+
+```html
+    <div class="clear">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </div>
+  </div>
+
+```
 ---
 
-## Bootstrap
 ![]({% asset_path front/bootstrap.png %})
+
+--
+
+## CSS classes
+
+- Elementary CSS (typos, images, buttons, forms)
+- Advanced components (navbar, panels)
+- Javascript animation (dropdown, modal,..)
+
+--
+
+## Grid System
+
+![]({% asset_path front/bootstrap-grid-intro.png %})
+
+--
+
+## Everything starts with a nice boilerplate!
+
+https://github.com/lewagon/bootstrap-boilerplate
+
+--
+## PRACTICE (1)
+
+- Let's start from scratch :)
+- Create a new **`index.html`** file
+- Containing exactly <a href="https://github.com/lewagon/bootstrap-boilerplate
+" target="_blank">our boilerplate</a>
+- Add the link to **your** stylesheet **after** the link to Bootstrap stylesheet
+
+```html
+<link href='style.css' rel='stylesheet'>
+```
+- Copy/paste your `<title>` and google fonts links in your new page
+- Copy/paste your `<body>` in your new page
+
+---
+
+## Elementary CSS
+
+http://getbootstrap.com/css/
+
+--
+
+### Typos (alignment)
+
+![]({% asset_path front/bootstrap-texts.png %})
+
+--
+
+### Typos (list-inline)
+
+```html
+<ul class="list-inline">
+  <!--Your list-->
+</ul>
+```
+
+![]({% asset_path front/list-inline-footer.png %})
+
+--
+
+### Buttons
+
+![]({% asset_path front/bootstrap-buttons.png %})
+
+```html
+<a class="btn">Default</a>
+<a class="btn btn-primary">Primary</a>
+<a class="btn btn-success">Success</a>
+<a class="btn btn-info">Info</a>
+```
+
+--
+
+### Images
+
+![]({% asset_path front/bootstrap-images.png %})
+
+--
+
+### PRACTICE (1)
+
+Add these Bootstrap classes
+
+- `text-center` on your paragraphs
+- `list-inline` on your footer list (`<ul>`)
+
+---
+
+## Advanced components
+
+http://getbootstrap.com/components/
+
+--
+
+### Navbar
+
+![]({% asset_path front/bootstrap-navbar.png %})
+
+--
+
+ ### PRACTICE (1)
+
+- Copy <a href="http://getbootstrap.com/components/#navbar-default" target="_blank">Bootstrap navbar</a> at the beginning of your body
+- Add the `navbar-fixed-top` class to your `<nav>` to fix it at the top
+- Get rid of the first left navigation `<ul>` and of the `<form>`
+- Change the names of the remaining links
+
+---
+
+## Bootstrap grid
+
+![]({% asset_path front/bootstrap-grid-intro.png %})
+
+
+--
+
+## Definition
+
+Bootstrap includes a **responsive, mobile first** fluid **grid** system that appropriately scales up to **12 columns** as the **device** size increases.
+
+--
+
+## Responsive
+
+![]({% asset_path front/bootstrap-responsive.png %})
+
+
+--
+
+## Mobile-first
+
+![]({% asset_path front/bootstrap-mobile-first.png %})
+
+--
+
+## How it works?
+
+--
+
+## Container first
+
+```html
+<div class="container">
+
+  <!--Define a container-->
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-container.png %})
+
+--
+
+## Then insert rows
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-1.png %})
+
+--
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+  <div class="row">
+    <!-- Second row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-2.png %})
+
+--
+
+```html
+<div class="container">
+
+  <div class="row">
+    <!-- First row -->
+  </div>
+
+  <div class="row">
+    <!-- Second row -->
+  </div>
+
+  <div class="row">
+    <!-- Third row -->
+  </div>
+
+</div>
+```
+
+![]({% asset_path front/bootstrap-row-3.png %})
+
+--
+
+## What's in the row ?
+
+```html
+<div class="col-xs-6">
+</div>
+```
+
+- **col**: because it fits a number of columns
+- **xs**: screen width
+- **6**: number of columns taken by the block (**max 12**)
+
+--
+
+## Media
+
+- **xs**: Extra small devices (Phones < 768px)
+- **sm**: Small devices (Tablets > 768px)
+- **md**: Medium devices (> 992px)
+- **lg**: Large devices (Desktops > 1200px)
+
+--
+## Example (2 columns)
+
+![]({% asset_path front/bootstrap-2-on-all.png %})
+
+--
+
+## Code
+
+```html
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+  </div>
+</div>
+```
+
+![]({% asset_path front/bootstrap-2-divs.png %})
+
+--
+
+## Mobile first
+
+- if you just give the `.col-xs` classes
+- it will apply on all larger screens
+
+--
+## Now what happens ?
+```html
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+    <div class="col-xs-6">
+    </div>
+
+  </div>
+</div>
+```
+
+--
+## Just return on new line
+
+![]({% asset_path front/bootstrap-3-divs.png %})
+
+--
+
+## Responsive example
+We want 4 blocks for tablets or larger screens
+
+![]({% asset_path front/bootstrap-4-on-tablet.png %})
+
+--
+We want 2 rows for mobiles with 2 blocks on each row
+
+![]({% asset_path front/bootstrap-4-on-mobile.png %})
+--
+
+## How will you do ?
+
+--
+
+## Code
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+  </div>
+</div>
+```
+
+Yeah baby !
+
+--
+### PRACTICES (1)
+
+** initial grid **
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+  </div>
+</div>
+```
+** A feature `<div>` in each `.col`**
+
+```html
+<div class="col-xs-6 col-sm-3">
+  <div class="feature">
+    ...
+  </div>
+</div>
+```
 
 --
 
 ## Themes
 <a href="https://wrapbootstrap.com/" target="_blank">https://wrapbootstrap.com/</a>
 ![]({% asset_path landing/wrapboostrap.png %})
+
+---
+## Want to go further?
+
+- Apply to our [bootcamp program](http://lewagon.org/program)
+
+- Follow us on [Twitter](https://twitter.com/lewagonparis) or [Facebook](https://www.facebook.com/lewagonformation)
+
+- Seeya !
