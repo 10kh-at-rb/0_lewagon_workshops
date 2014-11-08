@@ -887,8 +887,8 @@ Add these Bootstrap classes
 
 - `text-center` on your paragraphs (`<p>`)
 - `list-inline` on your footer list (`<ul>`)
-- `form-group` and `form-control` on your Mailchimp form
-
+- `form-group` and `form-control` to pimp your Mailchimp form
+- `btn` and `btn-primary` to design your subscribe button
 ---
 
 ## Bootstrap grid
