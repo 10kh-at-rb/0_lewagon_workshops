@@ -25,7 +25,7 @@ layout: reveal
 * 1 explicite subhead
 * 1 simple call-to-action (CTA)
 * 1 image rather than a long text to set the context
-message & keywords consistent & coherent        
+message & keywords consistent & coherent
 --
 
 ## What - Style
@@ -35,7 +35,7 @@ message & keywords consistent & coherent
 * focus attention on CTA with color contrast, encapsulation frame, space,...
 * 1 single button to click on : the one with your CTA on it
 * fully-responsive layout
-* fully-scrollable content & thumb-friendly buttons/links       
+* fully-scrollable content & thumb-friendly buttons/links
 --
 
 ## What - Remember
@@ -627,6 +627,44 @@ Now style them
 ```
 
 ---
+## Fontawesome
+
+- <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">A font of icons!</a>
+- A font == no need to resize icons or change their color, it can be made with CSS
+- VERY usefull for utilitary icons (social networks, upload, settings, mail, etc..)
+
+--
+### PRACTICE (1)
+
+**`<head>`**
+```html
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+```
+
+--
+### PRACTICE (2)
+
+**in your footer `<div>`**
+```html
+<ul>
+  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+```
+
+**Style these icons with CSS**
+```css
+#my-footer a {
+  color: lightgrey;
+}
+#my-footer a:hover {
+  color: white;
+}
+```
+
+---
 
 ## Forms
 ### User input
@@ -635,9 +673,9 @@ Now style them
 
 ```html
 <form>
-.
-input elements
-.
+  .
+  input elements
+  .
 </form>
 ```
 
@@ -672,8 +710,8 @@ input elements
 ## Full form
 ```html
 <form name="input" action="/subscribe" method="post">
-Username: <input type="text" name="user">
-<input type="submit" value="Submit">
+  Username: <input type="text" name="user">
+  <input type="submit" value="Submit">
 </form>
 
 ```
@@ -681,7 +719,8 @@ Username: <input type="text" name="user">
 --
 
 ## Form - server
-### We need something server side to answer to this action
+
+We need something server side to store submitted data
 
 ---
 ## Mailchimp
@@ -702,8 +741,8 @@ Username: <input type="text" name="user">
 ```html
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
-  <form action="//8thcolor.us4.list-manage.com/subscribe/post?u=506ea88e9f457f1a4960a3310&amp;id=868a950c07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  ...
+  <form action="http://8thcolor.us4.list-manage.com/subscribe/post?u=506ea88e9f457f1a4960a3310&amp;id=868a950c07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    ...
   </form>
 </div>
 ```
@@ -712,42 +751,40 @@ Username: <input type="text" name="user">
 ### Minimal fields
 
 ```html
-    <h2>Subscribe to our mailing list</h2>
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
+<h2>Subscribe to our mailing list</h2>
+<div class="mc-field-group">
+  <label for="mce-EMAIL">Email Address </label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
 ```
 
 --
 ### Error messages
 
 ```html
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    
+<div id="mce-responses" class="clear">
+  <div class="response" id="mce-error-response" style="display:none"></div>
+  <div class="response" id="mce-success-response" style="display:none"></div>
+</div>
 ```
 
 --
 ### Bot signup protection
 
 ```html
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;">
-      <input type="text" name="b_506ea88e9f457f1a4960a3310_868a950c07" tabindex="-1" value="">
-    </div>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;">
+  <input type="text" name="b_506ea88e9f457f1a4960a3310_868a950c07" tabindex="-1" value="">
+</div>
 ```
 
 --
 ### Action
 
 ```html
-    <div class="clear">
-      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    </div>
-  </div>
-
+<div class="clear">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
 ```
 ---
 
@@ -755,17 +792,11 @@ Username: <input type="text" name="user">
 
 --
 
-## CSS classes
+## Bootstrap documentation
 
-- Elementary CSS (typos, images, buttons, forms)
-- Advanced components (navbar, panels)
-- Javascript animation (dropdown, modal,..)
-
---
-
-## Grid System
-
-![]({% asset_path front/bootstrap-grid-intro.png %})
+1. Elementary CSS (typos, images, buttons, forms)
+1. Advanced components (navbar, panels)
+1. Javascript animation (dropdown, modal,..)
 
 --
 
@@ -826,6 +857,23 @@ http://getbootstrap.com/css/
 ```
 
 --
+### Forms
+
+```html
+<form>
+  <div class="form-group">
+    <label for="email">Your email</label>
+    <input type="email" name="email" id="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="password">Your email</label>
+    <input type="password" name="password" id="password" class="form-control">
+  </div>
+  <input type="submit" value="Subscribe" class="btn btn-primary">
+</div>
+```
+
+--
 
 ### Images
 
@@ -837,29 +885,9 @@ http://getbootstrap.com/css/
 
 Add these Bootstrap classes
 
-- `text-center` on your paragraphs
+- `text-center` on your paragraphs (`<p>`)
 - `list-inline` on your footer list (`<ul>`)
-
----
-
-## Advanced components
-
-http://getbootstrap.com/components/
-
---
-
-### Navbar
-
-![]({% asset_path front/bootstrap-navbar.png %})
-
---
-
- ### PRACTICE (1)
-
-- Copy <a href="http://getbootstrap.com/components/#navbar-default" target="_blank">Bootstrap navbar</a> at the beginning of your body
-- Add the `navbar-fixed-top` class to your `<nav>` to fix it at the top
-- Get rid of the first left navigation `<ul>` and of the `<form>`
-- Change the names of the remaining links
+- `form-group` and `form-control` on your Mailchimp form
 
 ---
 
