@@ -4,6 +4,8 @@
   file: frontend-design
 - name: Bootstrap
   file: bootstrap
+- name: Your landing page "Beirut"
+  file: landing_beirut
 - name: Your landing page
   file: landing
 - name: Git & GitHub
