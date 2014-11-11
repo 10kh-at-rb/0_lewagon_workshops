@@ -352,3 +352,47 @@ Can we offset a block ?
   </div>
 </div>
 ```
+
+---
+
+## Themes
+![]({% asset_path front/bootstrap-theme.png %})
+
+--
+
+## Collection
+<a href="https://wrapbootstrap.com/" target="_blank">https://wrapbootstrap.com/</a>
+![]({% asset_path front/wrapboostrap.png %})
+
+--
+
+## Usages
+
+* Landing
+* Blog
+* e-Commerce
+* Portfolio
+
+--
+
+### Select a good match
+![]({% asset_path front/theme-base.png %})
+--
+
+###  Replace titles & content
+![]({% asset_path front/theme-content.png %})
+
+--
+
+###  Replace logo & images
+![]({% asset_path front/theme-images.png %})
+
+--
+
+###  Don't forget your contact info
+
+* Mail
+* Twitter
+* FB
+
+---
