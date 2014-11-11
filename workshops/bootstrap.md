@@ -4,7 +4,49 @@ layout: reveal
 
 ![]({% asset_path front/bootstrap.png %})
 
+---
+
+# Why bootstrap?
+
 --
+
+## Mobile
+![]({% asset_path front/mobile-traffic.png %})
+
+--
+
+## Mobile
+### Making responsive website with raw HTML/CSS is possible 
+### ...but difficult
+
+--
+
+## Components
+### Everyone need the same thing
+
+* Navigation bar
+* Buttons
+* Icons
+* Alerts
+
+--
+
+## Layout
+### Organizing elements using divs is possible but difficult
+
+--
+
+![]({% asset_path front/keep-calm-and-add-value.png %})
+
+--
+
+## We're here to solve problems 
+
+* not to create buttons
+* not to organize items
+* not to play around assets' sizes
+
+---
 
 ## Grid System
 
@@ -396,3 +438,10 @@ Can we offset a block ?
 * FB
 
 ---
+## Want to go further?
+
+- Apply to our [bootcamp program](http://lewagon.org/program)
+
+- Follow us on [Twitter](https://twitter.com/lewagonparis) or [Facebook](https://www.facebook.com/lewagonformation)
+
+- Seeya !
