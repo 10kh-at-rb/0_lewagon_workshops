@@ -4,7 +4,49 @@ layout: reveal
 
 ![]({% asset_path front/bootstrap.png %})
 
+---
+
+# Why bootstrap?
+
 --
+
+## Mobile
+![]({% asset_path front/mobile-traffic.png %})
+
+--
+
+## Mobile
+### Making responsive website with raw HTML/CSS is possible 
+### ...but difficult
+
+--
+
+## Components
+### Everyone need the same thing
+
+* Navigation bar
+* Buttons
+* Icons
+* Alerts
+
+--
+
+## Layout
+### Organizing elements using divs is possible but difficult
+
+--
+
+![]({% asset_path front/keep-calm-and-add-value.png %})
+
+--
+
+## We're here to solve problems 
+
+* not to create buttons
+* not to organize items
+* not to play around assets' sizes
+
+---
 
 ## Grid System
 
@@ -352,3 +394,54 @@ Can we offset a block ?
   </div>
 </div>
 ```
+
+---
+
+## Themes
+![]({% asset_path front/bootstrap-theme.png %})
+
+--
+
+## Collection
+<a href="https://wrapbootstrap.com/" target="_blank">https://wrapbootstrap.com/</a>
+![]({% asset_path front/wrapboostrap.png %})
+
+--
+
+## Usages
+
+* Landing
+* Blog
+* e-Commerce
+* Portfolio
+
+--
+
+### Select a good match
+![]({% asset_path front/theme-base.png %})
+--
+
+###  Replace titles & content
+![]({% asset_path front/theme-content.png %})
+
+--
+
+###  Replace logo & images
+![]({% asset_path front/theme-images.png %})
+
+--
+
+###  Don't forget your contact info
+
+* Mail
+* Twitter
+* FB
+
+---
+## Want to go further?
+
+- Apply to our [bootcamp program](http://lewagon.org/program)
+
+- Follow us on [Twitter](https://twitter.com/lewagonparis) or [Facebook](https://www.facebook.com/lewagonformation)
+
+- Seeya !
