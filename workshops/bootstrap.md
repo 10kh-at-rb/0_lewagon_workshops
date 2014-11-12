@@ -16,23 +16,30 @@ layout: reveal
 --
 
 ## Mobile
-### Making responsive website with raw HTML/CSS is possible 
-### ...but difficult
+
+Making responsive website from scratch with HTML/CSS is possible..
+
+..but **really painful**
 
 --
 
 ## Components
-### Everyone need the same thing
+### Everyone need the same UI elements
 
 * Navigation bar
 * Buttons
 * Icons
 * Alerts
+* Pricing panels
+
+http://patterntap.com/ for example of standard patterns
 
 --
 
 ## Layout
-### Organizing elements using divs is possible but difficult
+
+Building layouts with divs in HTML/CSS is possible..
+..but **painful**
 
 --
 
@@ -40,9 +47,10 @@ layout: reveal
 
 --
 
-## We're here to solve problems 
+## We're here to solve problems
 
-* not to create buttons
+* not to re-code navbars
+* not to re-design buttons
 * not to organize items
 * not to play around assets' sizes
 
