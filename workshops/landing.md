@@ -1,6 +1,55 @@
 ---
 layout: reveal
 ---
+## Landing pages
+1. Why
+1. What
+1. When
+--
+
+![]({% asset_path landing/openingsoon.jpg %})
+
+--
+
+## Why
+- Tell customers about your offer
+- Test various aspects
+- Collect interested contacts
+--
+
+## What - Content
+
+### CLEAR & CONCISE
+
+* 1 striking headline
+* 1 explicite subhead
+* 1 simple call-to-action (CTA)
+* 1 image rather than a long text to set the context
+message & keywords consistent & coherent
+--
+
+## What - Style
+
+### FOCUSED & USER-FRIENDLY !
+
+* focus attention on CTA with color contrast, encapsulation frame, space,...
+* 1 single button to click on : the one with your CTA on it
+* fully-responsive layout
+* fully-scrollable content & thumb-friendly buttons/links
+--
+
+## What - Remember
+
+- It's about your users, not about you
+- It's about their problems, not about your solution
+--
+
+## When
+- Now
+- It will change anyway
+
+---
+
 ## Workshop outline
 1. Theoretical intro
 1. Live-code demo (**we code, you don't**)
@@ -576,8 +625,8 @@ Now style them
   color: lightgrey;
 }
 ```
----
 
+---
 ## Fontawesome
 
 - <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">A font of icons!</a>
@@ -617,21 +666,137 @@ Now style them
 
 ---
 
+## Forms
+### User input
+--
+## The Form Tag
+
+```html
+<form>
+  .
+  input elements
+  .
+</form>
+```
+
+--
+## Inputs - Text
+```html
+<input type="text" name="firstname">
+```
+--
+
+## Inputs - Radio
+```html
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+```
+--
+
+## Inputs - Checkboxes
+```html
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car ```
+--
+
+## Inputs - Submit button
+
+```html
+<input type="submit" value="Submit">
+```
+
+--
+
+## Full form
+```html
+<form name="input" action="/subscribe" method="post">
+  Username: <input type="text" name="user">
+  <input type="submit" value="Submit">
+</form>
+
+```
+
+--
+
+## Form - server
+
+We need something server side to store submitted data
+
+---
+## Mailchimp
+![]({% asset_path landing/mailchimp.jpg %})
+
+--
+
+![]({% asset_path landing/mailchimp-landing.png %})
+
+--
+
+![]({% asset_path landing/mailchimp-forms.png %})
+
+--
+
+### A form
+
+```html
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="http://8thcolor.us4.list-manage.com/subscribe/post?u=506ea88e9f457f1a4960a3310&amp;id=868a950c07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    ...
+  </form>
+</div>
+```
+
+--
+### Minimal fields
+
+```html
+<h2>Subscribe to our mailing list</h2>
+<div class="mc-field-group">
+  <label for="mce-EMAIL">Email Address </label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+```
+
+--
+### Error messages
+
+```html
+<div id="mce-responses" class="clear">
+  <div class="response" id="mce-error-response" style="display:none"></div>
+  <div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+```
+
+--
+### Bot signup protection
+
+```html
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;">
+  <input type="text" name="b_506ea88e9f457f1a4960a3310_868a950c07" tabindex="-1" value="">
+</div>
+```
+
+--
+### Action
+
+```html
+<div class="clear">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+```
+---
+
 ![]({% asset_path front/bootstrap.png %})
 
 --
 
-## CSS classes
+## Bootstrap documentation
 
-- Elementary CSS (typos, images, buttons, forms)
-- Advanced components (navbar, panels)
-- Javascript animation (dropdown, modal,..)
-
---
-
-## Grid System
-
-![]({% asset_path front/bootstrap-grid-intro.png %})
+1. Elementary CSS (typos, images, buttons, forms)
+1. Advanced components (navbar, panels)
+1. Javascript animation (dropdown, modal,..)
 
 --
 
@@ -692,6 +857,23 @@ http://getbootstrap.com/css/
 ```
 
 --
+### Forms
+
+```html
+<form>
+  <div class="form-group">
+    <label for="email">Your email</label>
+    <input type="email" name="email" id="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="password">Your email</label>
+    <input type="password" name="password" id="password" class="form-control">
+  </div>
+  <input type="submit" value="Subscribe" class="btn btn-primary">
+</div>
+```
+
+--
 
 ### Images
 
@@ -703,30 +885,10 @@ http://getbootstrap.com/css/
 
 Add these Bootstrap classes
 
-- `text-center` on your paragraphs
+- `text-center` on your paragraphs (`<p>`)
 - `list-inline` on your footer list (`<ul>`)
-
----
-
-## Advanced components
-
-http://getbootstrap.com/components/
-
---
-
-### Navbar
-
-![]({% asset_path front/bootstrap-navbar.png %})
-
---
-
- ### PRACTICE (1)
-
-- Copy <a href="http://getbootstrap.com/components/#navbar-default" target="_blank">Bootstrap navbar</a> at the beginning of your body
-- Add the `navbar-fixed-top` class to your `<nav>` to fix it at the top
-- Get rid of the first left navigation `<ul>` and of the `<form>`
-- Change the names of the remaining links
-
+- `form-group` and `form-control` to pimp your Mailchimp form
+- `btn` and `btn-primary` to design your subscribe button
 ---
 
 ## Bootstrap grid
@@ -962,6 +1124,12 @@ Yeah baby !
 ```
 
 --
+
+## Themes
+<a href="https://wrapbootstrap.com/" target="_blank">https://wrapbootstrap.com/</a>
+![]({% asset_path landing/wrapboostrap.png %})
+
+---
 ## Want to go further?
 
 - Apply to our [bootcamp program](http://lewagon.org/program)
