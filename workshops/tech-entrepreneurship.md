@@ -34,6 +34,12 @@ layout: reveal
 
 ![]({% asset_path tech-entrepreneurs/tech-approach-scale.png %})
 
+--
+
+## In any case
+
+![]({% asset_path tech-entrepreneurs/tech-approach-measure.png %})
+
 ---
 
 ## Product pitch
@@ -45,14 +51,59 @@ layout: reveal
 
 --
 
-## Product pitch: example
+## Product pitch: Laundry app
 
-
-**Target**: 25-30 year-old with average salary / small flats (no washing machine)
+**Target**: 25-30 year-old with average earnings & small flats (no washing machine)
 
 **Problem**: Expensive & time-consuming laundry costs
 
 **Product**: A mobile/web service for laundry service (with pickup / delivery)
+
+--
+
+## Product pitch: Dining app
+
+**Target**: 25-30 year-old active people
+
+**Problem**: Hard to organize dinners with friends
+
+(who brings what? Who pays for what?)
+
+**Product**: A mobile/web service for handling dinners with friends
+
+
+--
+
+## User stories
+
+Product pitch will help you write **user stories** to define a **[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product)**
+
+--
+
+## User stories: example
+
+- **As a** visitor, **I can** create an account
+- **As a** user, **I can** create groups
+- **As a** user, **I can** add existing friends on a group
+- **As a** user, **I can** invite new friends on a group
+- **As a** organizer, **I can** create dinners on a group
+- **As an** invitee, **I can** comment on a dinner
+- **As an** invitee, **I can** accept/decline a dinner
+- **As an** invitee, **I can** tell what I bring to a dinner
+- **As an** invitee, **I can** tell how much I paid for that
+- etc..
+
+--
+
+## User stories: collaboration
+
+> I want to build a social app with geolocation so that anyone, at any moment,
+can organize real-time dinners and then receive analytics on expenses.. I see this as a connected shopping list for friends.. or more like a blablablabla...
+
+> <cite>Some web-entrepreneur in the wrong direction</cite>
+
+
+Developers **do understand user stories**. They can assess complexity & time cost.
 
 
 ---
@@ -116,6 +167,24 @@ Use [this tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise
 
 --
 
+## Activate: web-form service
+
+--
+
+## Activate: newsletter service
+
+
+--
+
+## Measure
+
+--
+
+### Level-0 metrics
+
+Mailchimp subscribees
+
+--
 ## Measure
 
 ![analytics]({% asset_path tech-entrepreneurs/analytics.png %})
@@ -140,7 +209,6 @@ Use [this tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise
 
 
 ![bitly]({% asset_path tech-entrepreneurs/bitly-metrics.png %})
-
 
 
 --
