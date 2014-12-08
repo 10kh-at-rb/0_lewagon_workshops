@@ -10,3 +10,5 @@
   file: landing
 - name: Git & GitHub
   file: git-github
+- name: Technical Entrepreneurship
+  file: tech-entrepreneurship
