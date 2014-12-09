@@ -51,3 +51,56 @@ body {
 :fullscreen .print {
   display: none;
 }
+
+
+.reveal a.btn{
+ background-color: #F05B2A;
+ color: white;
+ font-weight: 500;
+ padding: 20px 30px;
+ border-radius: 40px;
+ margin: 10px auto;
+}
+.reveal a.btn:hover{
+ background-color: brown;
+ color: white;
+}
+
+.reveal a.btn.blue{
+ background-color: #4B98C2;
+ color: white;
+ font-weight: 500;
+ padding: 20px 30px;
+ border-radius: 40px;
+ margin: 10px auto;
+}
+.reveal a.btn.blue:hover{
+ background-color: darkblue;
+ color: white;
+}
+.reveal blockquote {
+  border-left: 4px solid #666;
+  box-shadow: none;
+  margin: 1em auto;
+  padding: 0 0 0 1em;
+}
+
+.reveal blockquote p {
+  text-align: left;
+  font-family: monospace;
+  font-size: 80%;
+  width: 100%;
+}
+
+.reveal blockquote cite:before {
+  content: "ー ";
+}
+
+.reveal blockquote cite {
+  display: block;
+  font-family: sans-serif;
+  font-size: 90%;
+  font-style: normal;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
