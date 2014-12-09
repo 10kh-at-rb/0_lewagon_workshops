@@ -234,7 +234,7 @@ URL shortener **& growth hacking tool**
 
 --
 
-## We live in a world or APIs
+## We live in a world of APIs
 
 --
 
@@ -393,7 +393,20 @@ Product pitch will help you write **user stories** to define a **[MVP](http://en
 
 --
 
+
 ## Collaborate - User stories (2)
+
+> I want to build a social app with geolocation so that anyone, at any moment,
+can organize real-time dinners and then receive analytics on expenses.. I see this as a connected shopping list for friends.. or more like a blablablabla...
+
+> <cite>Some web-entrepreneur in the wrong direction</cite>
+
+
+Developers **do understand user stories**. They can assess complexity & time cost.
+
+--
+
+## Collaborate - User stories (3)
 
 - **As a** visitor, **I can** create an account
 - **As a** user, **I can** create groups
@@ -407,19 +420,6 @@ Product pitch will help you write **user stories** to define a **[MVP](http://en
 - etc..
 
 --
-
-## Collaborate - User stories (3)
-
-> I want to build a social app with geolocation so that anyone, at any moment,
-can organize real-time dinners and then receive analytics on expenses.. I see this as a connected shopping list for friends.. or more like a blablablabla...
-
-> <cite>Some web-entrepreneur in the wrong direction</cite>
-
-
-Developers **do understand user stories**. They can assess complexity & time cost.
-
---
-
 ## Collaborate - Project management
 
 [![trello]({% asset_path tech-entrepreneurs/trello.png %})](https://trello.com/b/nC8QJJoZ/trello-development)
