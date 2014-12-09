@@ -379,17 +379,19 @@ You still have to **code the front-end client :)**
 
 ## 2 options
 
-- You find a CTO
-- You build it yourself
+- Find a CTO
+- Build it yourself
 
 
-In any case, you have to understand **technical issues** & **tech project methodology**
+<br>
+
+In any case, understand **technical issues** & **tech-project methodology**
 
 --
 
 ## Collaborate - User stories (1)
 
-Product pitch will help you write **user stories** to define a **[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product)**
+Product pitch will help you write **user stories** to define your **[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product)**
 
 --
 
@@ -402,7 +404,9 @@ can organize real-time dinners and then receive analytics on expenses.. I see th
 > <cite>Some web-entrepreneur in the wrong direction</cite>
 
 
-Developers **do understand user stories**. They can assess complexity & time cost.
+Developers **don't** understand **blablabla**.
+
+Developers **do** understand **user stories**. They can assess complexity & time cost.
 
 --
 
