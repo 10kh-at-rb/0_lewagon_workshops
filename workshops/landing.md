@@ -1,6 +1,20 @@
 ---
 layout: reveal
 ---
+
+![]({% asset_path logo.png %})
+
+- Coding school for entrepreneurs
+- Founded in Aug '13
+- 5 promotions already
+- See [program](http://www.lewagon.org/program) and [students projects](http://www.lewagon.org/en/alumni)
+
+--
+
+<iframe class="wistia_embed" name="wistia_embed" src="http://fast.wistia.net/embed/iframe/9vb45twa62?canonicalUrl=http%3A%2F%2Fwww.lewagon.org&canonicalTitle=Le%20Wagon%20-%20Premi%C3%A8re%20Classe" allowtransparency="true" frameborder="0" scrolling="no" width="800" height="449"></iframe>
+
+---
+
 ## Landing pages
 1. Why
 1. What
