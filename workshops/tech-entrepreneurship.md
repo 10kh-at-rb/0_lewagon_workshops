@@ -7,7 +7,7 @@ layout: reveal
 
 - Coding school for entrepreneurs
 - Founded in Aug '13
-- 6 promotions already
+- 5 promotions already
 - See [program](http://www.lewagon.org/program) and [students projects](http://www.lewagon.org/en/alumni)
 
 --
@@ -17,8 +17,6 @@ layout: reveal
 ---
 
 ## Tech entrepreneurship
-
-This is an **opiniated lecture**, presenting one of the **technical approaches** to entrepreneurship.
 
 --
 
@@ -56,12 +54,13 @@ This is an **opiniated lecture**, presenting one of the **technical approaches**
 
 ## Think **[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product)**
 
--> include diagram of nested product
--> word / google
+![]({% asset_path tech-entrepreneurs/mvp.png %})
+
+Google started with a **simple search**.
 
 --
 
-## Product pitch: Kudoz
+## Use case: Kudoz
 
 [![]({% asset_path tech-entrepreneurs/kudoz.jpg %})](http://www.getkudoz.com/)
 
@@ -69,7 +68,7 @@ This is an **opiniated lecture**, presenting one of the **technical approaches**
 
 --
 
-## Product pitch: Roadstr
+## Use case: Roadstr
 
 [![]({% asset_path tech-entrepreneurs/roadstr.jpg %})](http://www.roadstr.fr/)
 
@@ -81,16 +80,16 @@ This is an **opiniated lecture**, presenting one of the **technical approaches**
 
 - **Many ways** to proove your concept (crowd-funding, door-to-door..)
 - A canonical approach: the **landing page**
-- Don't forget all the other aspects (community mgt on twitter/facebook from day 1..)
+- Don't neglect other aspects (like community management..)
 
 --
 
 ## A good landing page
 
-- Should translate your product pitch (**problem & solution**)
-- Should be **well-designed** (that will give you credibility)
+- Should translate clearly your product pitch (**problem & solution**)
+- Should be **well-designed** (credibility)
 - Should embed a **newsletter** or **web-form** to **capture some lead**
-- This will give you a **first basic CRM system**
+- Should give you a **first CRM system**
 
 --
 
@@ -115,8 +114,8 @@ This is an **opiniated lecture**, presenting one of the **technical approaches**
 ## Learn front-end basics
 
 - HTML / CSS / Bootstrap => entry cost **very low**
-- You keep hands on design & can **integrate external web-services**
-- You can even **start delivering value** with front-end skills
+- You keep hands on design
+- You can **integrate external web-services** and **start delivering value**
 
 --
 
@@ -163,8 +162,8 @@ Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 ### Level-0 metrics
 
-- metric = **Mailchimp subscribees**
-- You can launch marketing campaigns on your list
+- Number of **Mailchimp subscribees**
+- You can launch marketing campaigns on your lists
 
 ![analytics]({% asset_path tech-entrepreneurs/mailchimp-metrics.png %})
 
@@ -176,12 +175,15 @@ Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 [![bitly]({% asset_path tech-entrepreneurs/bitly.jpg %})](bitly.com)
 
-
-<a href="http://bit.ly/1A8sZC0" class="btn">Demo: link 1</a>
+URL shortener **& analytics tool**
 
 <br>
 
-<a href="http://bit.ly/1ubl0Av" class="btn">Demo: link 2</a>
+<a href="http://bit.ly/1A8sZC0" class="btn">Demo: Offer 1</a>
+
+<br>
+
+<a href="http://bit.ly/1ubl0Av" class="btn blue">Demo: Offer 2</a>
 
 --
 
@@ -213,6 +215,18 @@ Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 ![bounce]({% asset_path tech-entrepreneurs/bounce-rate.jpg %})
 
+--
+
+### Growth Hacking tools
+
+
+[![ga]({% asset_path tech-entrepreneurs/sniply.png %})](http://snip.ly/)
+
+<br>
+
+URL shortener **& growth hacking tool**
+
+**Ex**: http://snip.ly/xRyF
 
 ---
 
@@ -235,7 +249,7 @@ Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 --
 
-## What's a website?
+## Well, what's a website?
 
 
 --
@@ -276,6 +290,7 @@ Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 
 #### Get all comments - READ
+
 GET https://wagon-chat.herokuapp.com/mines/comments
 
 #### Post a new comment - WRITE
@@ -285,65 +300,100 @@ POST https://wagon-chat.herokuapp.com/mines/comments
 ```json
 {
   "author": "Boris",
-  "content": "Un post via une API"
+  "content": "I'm writing a post using an API"
 }
 ```
-Your URL nav don't allow you to make POST request. Use [Postman chrome plugin](chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html)
+Your navigation Bar don't let you make POST request. Use [Postman chrome plugin](chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html)
 
 
 --
 
-## Popular services all have JSON APIs
+## Popular services all have JSON APIs..
 
-### [FACEBOOK GRAPH API EXPLORER](https://developers.facebook.com/tools/explorer/)
+Ex: **[Facebook graph API explorer](https://developers.facebook.com/tools/explorer/)**
 
 --
 
-## Use API to build prototypes
+## They know you are not developers
 
+Most of these services will give you the **embed code** so that you can just **copy/paste some code in your HTML**.
+
+
+--
+
+## API use - connect social media
+
+- Read-write data from facebook / twitter / instagram **from your website**.
+
+### Example:
+
+- Include a twitter feed
+- Include a share button on facebook / twitter / g+ / ...
+
+--
+
+## API use - make your site interactive
+
+[![olark]({% asset_path tech-entrepreneurs/olark.png %})](http://www.lewagon.org/blog/tutorial-olark)
+
+[![disqus]({% asset_path tech-entrepreneurs/disqus.png %})](https://disqus.com/)
+
+
+--
+
+## API use - build prototypes
+
+[![zapier]({% asset_path tech-entrepreneurs/zapier.png %})](https://zapier.com/)
+
+Zapier is the **APIs plumber**. Use it to build **prototypes delivering values**.
+
+--
+
+## Use case: Le Wagon application process (1)
+
+![zapier]({% asset_path tech-entrepreneurs/trello-step-one.png %})
+
+--
+
+## Use case: Le Wagon application process (2)
+
+![zapier]({% asset_path tech-entrepreneurs/trello-step-two.png %})
+
+
+--
+
+## API use - create backends for you
+
+[![zapier]({% asset_path tech-entrepreneurs/parse.png %})](https://parse.com/)
+
+You still have to **code the front-end client :)**
 
 ---
 
 ## Build & Scale
 
-#### 2 options
+- Prototypes are good
+- At one point they are **limited** and **don't scale**
+
+--
+
+## 2 options
 
 - You find a CTO
 - You build it yourself
-- In any case, you have to know the **technical language** & **project methodology**
+
+
+In any case, you have to understand **technical issues** & **tech project methodology**
 
 --
 
-![]({% asset_path tech-entrepreneurs/client-server-facebook.png %})
-
---
-## Facebook static-style
-
-### 1 billion users = 1 billion profile pages?
---
-## Facebook dynamic-style
-
-### Of course not
-### 1 billion users = 1 profile template
-
---
-
-![]({% asset_path tech-entrepreneurs/client-server-pagebuild.png %})
-
---
-
-![]({% asset_path tech-entrepreneurs/client-server-database.png %})
-
-
---
-
-## User stories
+## Collaborate - User stories (1)
 
 Product pitch will help you write **user stories** to define a **[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product)**
 
 --
 
-## User stories: example
+## Collaborate - User stories (2)
 
 - **As a** visitor, **I can** create an account
 - **As a** user, **I can** create groups
@@ -358,7 +408,7 @@ Product pitch will help you write **user stories** to define a **[MVP](http://en
 
 --
 
-## User stories: collaboration
+## Collaborate - User stories (3)
 
 > I want to build a social app with geolocation so that anyone, at any moment,
 can organize real-time dinners and then receive analytics on expenses.. I see this as a connected shopping list for friends.. or more like a blablablabla...
@@ -368,3 +418,28 @@ can organize real-time dinners and then receive analytics on expenses.. I see th
 
 Developers **do understand user stories**. They can assess complexity & time cost.
 
+--
+
+## Collaborate - Project management
+
+[![trello]({% asset_path tech-entrepreneurs/trello.png %})](https://trello.com/b/nC8QJJoZ/trello-development)
+
+--
+
+## Collaborate - Developper workflow
+
+[![github]({% asset_path tech-entrepreneurs/github.png %})](https://github.com/)
+
+
+--
+
+## Learn
+
+[![ruby]({% asset_path tech-entrepreneurs/github.png %})](https://www.ruby-lang.org/fr/)
+
+[![rails]({% asset_path tech-entrepreneurs/github.png %})](http://rubyonrails.org/)
+
+
+--
+
+## Thank you
