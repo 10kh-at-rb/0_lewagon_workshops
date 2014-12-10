@@ -86,7 +86,7 @@ Google started with a **simple search**.
 
 ## A good landing page
 
-- Should translate clearly your product pitch (**problem & solution**)
+- Should translate clearly your product pitch (**pain & solution**)
 - Should be **well-designed** (credibility)
 - Should embed a **newsletter** or **web-form** to **capture some lead**
 - Should give you a **first CRM system**
@@ -116,10 +116,27 @@ Google started with a **simple search**.
 - HTML / CSS / Bootstrap => entry cost **very low**
 - You keep hands on design
 - You can **integrate external web-services** and **start delivering value**
+- Every web-entrepreneur should master front-end
 
 --
 
-## Front-end: coding skills
+## Front-End languages
+
+The languages **your browser speaks**
+
+![gh pages]({% asset_path tech-entrepreneurs/front-languages.png %})
+
+
+--
+
+## CSS prototyping libraries
+
+[![bootstrap]({% asset_path tech-entrepreneurs/bootstrap.png %})](http://getbootstrap.com/)
+[![foundation]({% asset_path tech-entrepreneurs/foundation.png %})](http://foundation.zurb.com/)
+
+--
+
+## Front-end: tutorials
 
 #### HTML / CSS / [Bootstrap](http://getbootstrap.com/)
 
@@ -127,33 +144,38 @@ Google started with a **simple search**.
 
 --
 
-## Front-end: deployment
-
+## Deploying your site
 
 [![gh pages]({% asset_path tech-entrepreneurs/gh-pages.jpg %})](http://www.lewagon.org/blog/publier-site-github-pages)
 
 --
 
-## Domain name
+## Changing your domain name
 
 Use [our tutorial](http://www.lewagon.org/blog/siteweb-domaine-mail-personalise)
 
 --
 
-## Activate: web-form service
+## External services
+
+![gh pages]({% asset_path tech-entrepreneurs/frontend-services.png %})
+
+--
+
+## Activate - web-form services
 
 [![wufoo]({% asset_path tech-entrepreneurs/formkeep.png %})](https://formkeep.com/)
 [![form keep]({% asset_path tech-entrepreneurs/wufoo.png %})](http://www.wufoo.com/)
 
 
-
 --
 
-## Activate: newsletter service
+## Activate - newsletter service
 
 [![mailchimp]({% asset_path tech-entrepreneurs/mailchimp.png %})](http://mailchimp.com/)
 
 --
+
 ## Measure
 
 ![analytics]({% asset_path tech-entrepreneurs/analytics.png %})
@@ -212,6 +234,8 @@ URL shortener **& analytics tool**
 ![ga metrics new]({% asset_path tech-entrepreneurs/ga-metrics-new.png %})
 
 --
+
+### Check your bounce rate
 
 ![bounce]({% asset_path tech-entrepreneurs/bounce-rate.jpg %})
 
@@ -272,19 +296,61 @@ URL shortener **& growth hacking tool**
 
 ### Humans need friendly interface
 
-- **website**: Application Human Interface (HTML / CSS)
+- **website**: Application **Human** Interface (HTML / CSS)
 
 
 ### Computers don't like fancy
 
-- **API**: website for computers (JSON or XML)
+- **API**: Application **Programming** Interface (JSON or XML)
 
 --
 
 ![]({% asset_path tech-entrepreneurs/web-api.png %})
 
+--
+
+## What humans like to see
+
+![]({% asset_path tech-entrepreneurs/people-html.png %})
+
+**designed** content
 
 --
+
+## What machines like to see
+
+```json
+{"richestPeople":[
+    {"firstName":"Bill", "lastName":"Gates", "value":"81"},
+    {"firstName":"Carlos", "lastName":"Slim", "value":"79"},
+    {"firstName":"Warren", "lastName":"Buffet", "value":"72"}
+]}
+```
+
+**only structured** content
+
+--
+
+## Understand HTTP
+
+You will understand **APIs**
+
+--
+
+## GET
+
+![]({% asset_path tech-entrepreneurs/get.png %})
+
+
+--
+
+## POST
+
+![]({% asset_path tech-entrepreneurs/post.png %})
+
+
+--
+
 
 ## Let's chat using an API..
 
@@ -303,7 +369,7 @@ POST https://wagon-chat.herokuapp.com/mines/comments
   "content": "I'm writing a post using an API"
 }
 ```
-Your navigation Bar don't let you make POST request. Use [Postman chrome plugin](chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html)
+Your navigation bar don't let you make POST request. Use [Postman chrome plugin](chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html)
 
 
 --
@@ -318,6 +384,7 @@ Ex: **[Facebook graph API explorer](https://developers.facebook.com/tools/explor
 
 Most of these services will give you the **embed code** so that you can just **copy/paste some code in your HTML**.
 
+![]({% asset_path tech-entrepreneurs/frontend-services-api.png %})
 
 --
 
@@ -364,7 +431,7 @@ Zapier is the **APIs plumber**. Use it to build **prototypes delivering values**
 
 ## API use - create backends for you
 
-[![zapier]({% asset_path tech-entrepreneurs/parse.png %})](https://parse.com/)
+[![zapier]({% asset_path tech-entrepreneurs/parse-api.png %})](https://parse.com/)
 
 You still have to **code the front-end client :)**
 
@@ -374,6 +441,22 @@ You still have to **code the front-end client :)**
 
 - Prototypes are good
 - At one point they are **limited** and **don't scale**
+- You need to code your own **backend**
+
+--
+
+What's a **backend**?
+
+
+![client server]({% asset_path tech-entrepreneurs/client-server-full.png %})
+
+
+--
+
+### Backend languages
+
+![backend]({% asset_path tech-entrepreneurs/backend-languages.jpg %})
+
 
 --
 
@@ -439,7 +522,13 @@ Developers **do** understand **user stories**. They can assess complexity & time
 
 ## Learn
 
+### Backend-language: [RUBY](https://www.ruby-lang.org/fr/)
+
 [![ruby]({% asset_path tech-entrepreneurs/ruby.png %})](https://www.ruby-lang.org/fr/)
+
+--
+
+### Fullstack-framework: [Rails](http://rubyonrails.org/)
 
 [![rails]({% asset_path tech-entrepreneurs/rails.png %})](http://rubyonrails.org/)
 
