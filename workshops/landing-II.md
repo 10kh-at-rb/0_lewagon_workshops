@@ -24,7 +24,7 @@ layout: reveal
 ## Prerequisites 
 - A basic landing page
 - Take the one you did at last workshop
-- Or use <a href="https://github.com/vanakenm/santa-test/archive/master.zip" target="_blank">our own</a>
+- Or use <a href="https://github.com/vanakenm/santa-sample/raw/master/santa-base.zip" target="_blank">our own</a>
 
 --
 
