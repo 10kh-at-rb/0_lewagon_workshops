@@ -36,13 +36,21 @@ layout: reveal
 
 --
 
-## Why - remember our objectives:
-
-- Tell customers about your offer - <em>not possible without putting the page online</em>
-- Test various aspects - <em>how can you know what your users are doing</em>
-- Collect interested contacts - <em>how can you create a mailing list from your page</em>
+### We cannot tell customers about an offer
+## without being online
 
 --
+
+### We cannot test the message
+## without measuring what the users are doing
+
+--
+
+### We cannot collect interested contacts
+## without letting them signup
+
+--
+
 ## What 
 
 - Deploy: Git & Github
@@ -71,10 +79,28 @@ layout: reveal
 
 ---
 
+![]({% asset_path landing-2/deploy-button.jpg %})
+
+--
+
 ## Deploy 
+
 - Get our site from our machine to a server on Internet
 - First time, but also for all updates
 - You need a server for that - "hosting"
+
+--
+
+![]({% asset_path landing-2/server.jpg %})
+
+--
+
+## What is a server
+
+- Just a machine like yours
+- Not necessarly powerful
+- Up 24/7
+- Fixed IP
 
 --
 
@@ -122,6 +148,11 @@ The branch <em>must</em> be named `gh-pages`:
 
 - You can see that the code is on GitHub
 - And also deployed
+
+--
+
+## Done!
+Go to http://yourgithubuser.github.io/yourprojectname
 
 --
 
@@ -202,6 +233,83 @@ git push origin gh-pages                      # push to the remote (& deploy!)
 ## Communicate with your users
 
 ![]({% asset_path landing/mailchimp.jpg %})
+
+--
+### Why a mailing list
+
+- Tell them you are ready
+- Estimate interest
+- Conduct problem interviews
+- Get alpha users
+
+--
+
+![]({% asset_path landing/mailchimp-landing.png %})
+
+--
+
+![]({% asset_path landing-2/mc-create-list.png %})
+
+--
+
+![]({% asset_path landing/mailchimp-forms.png %})
+
+--
+
+### A form
+
+```html
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="http://mydomain.us4.list-manage.com/subscribe/post?u=506ea88e9f457f1a4960a3310&amp;id=868a950c07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    ...
+  </form>
+</div>
+```
+
+--
+### Minimal fields
+
+```html
+<h2>Subscribe to our mailing list</h2>
+<div class="mc-field-group">
+  <label for="mce-EMAIL">Email Address </label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+```
+
+--
+### Error messages
+
+```html
+<div id="mce-responses" class="clear">
+  <div class="response" id="mce-error-response" style="display:none"></div>
+  <div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+```
+
+--
+### Bot signup protection
+
+```html
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;">
+  <input type="text" name="b_506ea88e9f457f1a4960a3310_868a950c07" tabindex="-1" value="">
+</div>
+```
+
+--
+### Action
+
+```html
+<div class="clear">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+```
+
+--
+
+### Let's deploy & test it!
 
 ---
 ## More info

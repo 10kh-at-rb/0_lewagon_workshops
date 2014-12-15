@@ -6,10 +6,10 @@
   file: bootstrap
 - name: Your landing page "Beirut"
   file: landing_beirut
-- name: Your landing page II
-  file: landing-II
 - name: Your landing page
   file: landing
+- name: Your landing page II
+  file: landing-II
 - name: Git & GitHub
   file: git-github
 - name: Technical Entrepreneurship
