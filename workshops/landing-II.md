@@ -21,7 +21,7 @@ layout: reveal
 
 --
 
-## Prerequisites 
+## Prerequisites
 - A basic landing page
 - Take the one you did at last workshop
 - Or use <a href="https://github.com/vanakenm/santa-sample/raw/master/santa-base.zip" target="_blank">our own</a>
@@ -51,7 +51,7 @@ layout: reveal
 
 --
 
-## What 
+## What
 
 - Deploy: Git & Github
 - Know your users: Google Analytics
@@ -83,7 +83,7 @@ layout: reveal
 
 --
 
-## Deploy 
+## Deploy
 
 - Get our site from our machine to a server on Internet
 - First time, but also for all updates
@@ -152,7 +152,9 @@ The branch <em>must</em> be named `gh-pages`:
 --
 
 ## Done!
-Go to http://yourgithubuser.github.io/yourprojectname
+### The magic URL
+
+http://YOUR_GITHUB_USERNAME.github.io/YOUR_PROJECT_NAME
 
 --
 
@@ -161,7 +163,6 @@ Go to http://yourgithubuser.github.io/yourprojectname
 You also need to create the repo on GitHub !
 
 ```bash
-
 git init                                      # create the git repo
 git checkout -b gh-pages                      # create the branch
 git add .                                     # add everything to the index
@@ -205,17 +206,15 @@ git push origin gh-pages                      # push to the remote (& deploy!)
 ## Add the tracking code to your page
 
 ```html
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-1234567-8', 'auto');
-      ga('send', 'pageview');
-    < /script>
-
+  ga('create', 'UA-1234567-8', 'auto');
+  ga('send', 'pageview');
+< /script>
 ```
 
 --
