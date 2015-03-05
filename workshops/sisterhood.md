@@ -43,31 +43,6 @@ Install the [version 2 (stable)](http://www.sublimetext.com/2)
 
 --
 
-## Sublime Packages
-
-Install [Package Control](https://packagecontrol.io/installation)
-
---
-
-## Launch Package Control
-
-
-- Open Sublime Text
-- `Ctrl + Shift + p`
-- Type `"Package Control: Install Package"`
-- Search for package name in the Package installer
-- Launch the install
-
---
-
-## Most usefull packages
-
-- [Emmet](http://emmet.io/)
-- [ColorPicker](http://weslly.github.io/ColorPicker/)
-- [ColorHighlighter](https://github.com/Monnoroch/ColorHighlighter)
-
---
-
 ## Browser plugins
 
 - [FontFace Ninja](http://fontface.ninja/)
@@ -106,7 +81,7 @@ Quickly touch up [NounProject](http://thenounproject.com/) or [IconMelon](http:/
 
 --
 
-## Image resizing
+## Resize images
 
 > Same width and height does not mean same proportions..
 
@@ -114,7 +89,7 @@ Quickly touch up [NounProject](http://thenounproject.com/) or [IconMelon](http:/
 
 --
 
-## Resize images alltogether
+## Resize images
 
 Resize icons alltogether because it's all about **relative** proportions
 
@@ -122,7 +97,7 @@ Resize icons alltogether because it's all about **relative** proportions
 
 --
 
-## UI principles
+## UI guidelines
 
 Don't be fancy, be efficient
 
@@ -165,17 +140,6 @@ Make your shopping on [Google fonts](http://www.google.com/fonts).
 
 --
 
-## Fonts - Typekit
-
-Find more subtle fonts on [Typekit](https://typekit.com/). Elegant ones:
-
-- **Gotham Rounded**
-- **Pill Gothic**
-- **Proxima Nova**
-- **Brandon**
-
---
-
 ## Icons
 
 - [Fontawesome](http://fortawesome.github.io/Font-Awesome/) => utilities basic icons
@@ -184,7 +148,7 @@ Find more subtle fonts on [Typekit](https://typekit.com/). Elegant ones:
 
 --
 
-## Stay tuned & inspired
+## Inspiration
 
 - https://dribbble.com/
 - http://oozled.com/
@@ -198,7 +162,7 @@ Find more subtle fonts on [Typekit](https://typekit.com/). Elegant ones:
 Build your graphical elements:
 
 - Find one background image for your landing on [thestocks](http://thestocks.im/)
-- Build 4 PNG icons taking SVG from nounproject and changing them with Sketch.
+- Build 2 PNG icons taking SVG from nounproject and changing them with Sketch.
 
 
 ---
@@ -667,7 +631,7 @@ body {
   <!-- TODO: add you Google fonts links -->
 
   <!-- Personal stylesheet -->
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 ```
 
