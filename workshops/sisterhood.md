@@ -154,6 +154,7 @@ Make your shopping on [Google fonts](http://www.google.com/fonts).
 - http://oozled.com/
 - http://uptodate.frontendrescue.org/
 - http://www.awwwards.com/
+- http://www.producthunt.com/
 
 --
 
