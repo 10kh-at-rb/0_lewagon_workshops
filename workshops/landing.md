@@ -6,7 +6,8 @@ layout: reveal
 
 - Coding school for entrepreneurs
 - Founded in Aug '13
-- 5 promotions already
+- 15 promotions already
+- 300+ students
 - See [program](http://www.lewagon.org/program) and [students projects](http://www.lewagon.org/en/alumni)
 
 --
@@ -652,7 +653,7 @@ Now style them
 
 **`<head>`**
 ```html
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 ```
 
 --
