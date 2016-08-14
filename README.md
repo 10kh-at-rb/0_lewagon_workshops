@@ -10,11 +10,11 @@ $ git submodule update --init
 # Install all the things
 $ bundle install
 # Then run jekyll locally
-$ jekyll serve --watch
+$ bundle exec jekyll serve
+# => Now browse to http://localhost:4000
 ```
 
 ## Adding a new workshop
 
 1. Create a new `.md` file in the `workshops` folder.
 1. Add it to the `_data/workshops.yml` file
-
